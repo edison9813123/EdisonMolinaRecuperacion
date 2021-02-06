@@ -1,0 +1,21 @@
+<p>factura works!</p>
+<div class="row">
+    <div class="col-6">
+  <h2>Mis Productos</h2>
+  
+  <ul class="heroes">
+    <li *ngFor="let detalle_producto of detalle_producto"
+      [class.selected]="detalle_producto === selectedDetalleProducto"
+      (click)="onSelect(detalle_producto)">
+      <span class="badge">{{detalle_producto.fecha_cantidad}}</span> {{detalle_producto.producto}}
+      <span>{{detalle_producto.valor_unitario}}</span><span>{{detalle_producto.valor_total}}</span>
+
+      
+    </li>
+  </ul>
+  </div>
+  <div class="col-6">
+  <app-detalle-factura [detalle_producto]="selectedDetalleProducto"></app-detalle-factura>
+  
+  </div>
+  </div>

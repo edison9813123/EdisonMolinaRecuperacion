@@ -1,0 +1,16 @@
+<div *ngIf="producto">
+
+    <h2> factura</h2>
+    <span>Nombre_cliente: </span><input [(ngModel)]="producto.nombre_cliente" placeholder="name"/>
+    <div><span>Fecha_factura: </span>{{producto.fecha_factura}}</div>
+    <div><span>Direccion: </span>{{producto.direccion}}</div>
+    <div><span>Cedula: </span>{{producto.cedula}}</div>
+    <div><span>Telefono: </span>{{producto.telefono}}</div>
+    <div><span>Iva: </span>{{producto.iva}}</div>
+    <div><span>Sub_Total: </span>{{producto.sub_total}}</div>
+    <div><span>Total: </span>{{producto.total}}</div>
+    <div>
+    
+    </div>
+  
+  </div>
